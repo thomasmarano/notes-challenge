@@ -18,7 +18,6 @@
         this.lists.push(string)
     }
 
-
     exports.NoteListModel = NoteListModel
 
 })(this)

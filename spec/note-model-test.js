@@ -7,11 +7,13 @@
     }
   }
 
+
     function testsInstantiationWorks() {
       var testNote = 'My favorite language is JavaScript'
       var note = new Note(testNote);
       assert.isTrue(note.noteStorer === testNote)
     }
+
 
     function methodForReturningNotes() {
       var testNote = 'My favorite language is JavaScript'
@@ -22,4 +24,5 @@
 
     console.log(methodForReturningNotes());
     console.log(testsInstantiationWorks());
+
 })(this);
