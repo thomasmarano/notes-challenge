@@ -4,7 +4,6 @@
         this.noteList = notes.map(function(x){
               return x
         })
-        this.htmlCode = []
     }
 
     NoteListView.prototype.viewHtml = function() {
@@ -15,11 +14,7 @@
             htmlArray.push('<li><div>' + y + '</div></li>')
       })
 
-      htmlArray.push('<ul>')
-
-      this.htmlCode = htmlArray
-
-      return this.htmlCode
+      return (htmlArray.join('') + '<ul>')
 
       } return ('The list of notes is empty!')
     }
