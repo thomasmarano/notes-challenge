@@ -1,13 +1,21 @@
-function changeToHello(){
-  var elem = document.querySelectorAll('#myApp h1')
-  elem.forEach(function(item){
-      item.textContent = 'Hello!'
-  })
-}
+  window.onload = function() {
+    var elem = document.querySelectorAll('#myApp')
+    elem.forEach(function(item){
+        item.textContent= 'Howdy!'
+    })
+  }
 
-function changeToHowdy(){
-  var elem = document.querySelectorAll('#myApp h1')
+// function turnToHowdy() {
+//   var elem = document.querySelectorAll('#myApp')
+//   elem.forEach(function(item){
+//       item.textContent = 'Howdy'
+//   })
+// }
+
+
+function insertIntoPage(insertion){
+  var elem = document.querySelectorAll('#myApp')
   elem.forEach(function(item){
-      item.textContent= 'Howdy!'
+      item.innerHTML = insertion
   })
 }
