@@ -36,21 +36,14 @@
     testController.htmlConverter()
 
     var elem = document.querySelectorAll('#myApp')
-    console.log('TEST')
-    console.log(elem.innerHTML)
+
     // elem.forEach(function(item){
         //
         // console.log('HELLO')
         // console.log(item.innerHTML)
     }
 
-
-
   console.log(testingControllerInstantiation())
   console.log(testingHtmlConverter())
 
 })(this)
-
-
-// The innerHTML property of the app element contains HTML somewhat
-// similar to: <ul><li><div>Favourite food: pesto</div></li></ul>. (You'll need to mock some stuff to achieve this.)
