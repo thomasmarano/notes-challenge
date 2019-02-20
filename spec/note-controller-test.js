@@ -8,42 +8,29 @@
       }
   }
 
-  function NoteListModelDouble() {
-   this.createNoteCount = 0;
-   this.lists = ['Favorite drink: seltzer'];
-  };
-
-  var double = new NoteListModelDouble
-
-  double.createNote = function(string) {
-    this.createNoteCount += 1;
-  };
-
-  var testController = new Controller(double)
-
   function testingControllerInstantiation(){
-    assert.isTrue(testController !== null)
-    assert.isTrue(double.createNoteCount === 1)
-  }
-
-
-
-  function testingHtmlConverter(){
-
-    var testController = new Controller(double)
-    // console.log(testController.notelistview.viewHtml())
+    var notelistmodel = new NoteListModel()
+    var testController = new Controller(notelistmodel)
 
     testController.htmlConverter()
 
-    var elem = document.querySelectorAll('#myApp')
+    assert.isTrue(testController !== null)
+    // assert.isTrue(double.createNoteCount === 1)
+  }
 
-    // elem.forEach(function(item){
-        //
-        // console.log('HELLO')
-        // console.log(item.innerHTML)
-    }
+
+  //
+  // function testingHtmlConverter(){
+  //
+  //   // // var testController = new Controller(double)
+  //   // console.log('TEST')
+  //   // console.log(testController.notelistview)
+  //   // testController.htmlConverter()
+  //   // // var elem = document.querySelectorAll('#myApp')
+  //
+  //   }
 
   console.log(testingControllerInstantiation())
-  console.log(testingHtmlConverter())
+  // console.log(testingHtmlConverter())
 
 })(this)

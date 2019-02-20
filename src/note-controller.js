@@ -8,14 +8,12 @@
 
     Controller.prototype.htmlConverter = function(){
       this.inputToPage(this.notelistview.viewHtml())
-
     };
 
     Controller.prototype.inputToPage = function(html) {
       window.onload = function(){
           insertIntoPage(html)
       };
-
     }
 
     exports.Controller = Controller
