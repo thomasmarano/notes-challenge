@@ -20,25 +20,25 @@
     assert.isTrue(noteList.returnsNotes().length === 0)
   }
 
-  function createsNewNote() {
-      var testText = 'hello there'
-      var noteList = new NoteListModel()
-      var control = new Note(testText)
-      assert.isTrue(noteList.createNote(testText).noteStorer === control.noteStorer)
-  }
+  // function createsNewNote() {
+  //     var testText = 'hello there'
+  //     var noteList = new NoteListModel()
+  //     var control = new Note(testText)
+  //     assert.isTrue(noteList.createNote(testText).noteContent === control.noteContent)
+  // }
 
-  function storesNewNote(){
-    var noteList = new NoteListModel()
-    var testText = 'hello there'
-    noteList.createNote(testText)
-    assert.isTrue(noteList.lists.includes(testText))
-  }
+  // function storesNewNote(){
+  //   var noteList = new NoteListModel()
+  //   var testText = 'hello there'
+  //   noteList.createNote(testText)
+  //   assert.isTrue(noteList.lists.includes(testText))
+  // }
 
 
   console.log(instantiatesWithEmptyArray());
   console.log(returnsArrayOfNotes());
-  console.log(createsNewNote());
-  console.log(storesNewNote());
+  // console.log(createsNewNote());
+  // console.log(storesNewNote());
 
 
 })(this);

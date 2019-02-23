@@ -3,16 +3,18 @@
     var id = 0;
 
     function Note(string) {
-        this.noteStorer = string
+
         var newId = generateId();
         this.id = newId
+        this.noteContent = string
+
     }
 
     function generateId() { return id++; };
 
 
     Note.prototype.returnsText = function() {
-        return this.noteStorer
+        return this.noteContent
     }
 
     exports.Note = Note

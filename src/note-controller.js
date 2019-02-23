@@ -1,13 +1,15 @@
 (function(exports){
-    function Controller(notelist){
-        this.note = notelist
-        this.note.createNote('Favorite drink: seltzer')
-        this.notelistview = new NoteListView(this.note.lists)
+    function Controller(notelistmodel){
+        this.notelistModel = notelistmodel
+        this.notelistModel.createNote('Favorite drink: seltzer')
+        this.notelistview = new NoteListView(this.notelistModel)
     };
 
 
     Controller.prototype.htmlConverter = function(){
-      this.inputToPage(this.notelistview.viewHtml())
+      // console.log(this.notelistview.viewHtmlNew())
+      // console.log(this.notelistview.noteListy)
+      this.inputToPage(this.notelistview.viewHtmlNew())
     };
 
     Controller.prototype.inputToPage = function(html) {

@@ -8,14 +8,14 @@
         return this.lists
     }
 
-    NoteListModel.prototype.createNote = function(string){
-        var note = new Note(string)
-        this.storesNote(string)
-        return note
+    NoteListModel.prototype.createNote = function(noteContent){
+        var note = new Note(noteContent)
+        this.storesNote(note)
+        // return string
     }
 
-    NoteListModel.prototype.storesNote = function(string) {
-        this.lists.push(string)
+    NoteListModel.prototype.storesNote = function(note) {
+        this.lists.push(note)
     }
 
     exports.NoteListModel = NoteListModel

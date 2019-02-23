@@ -9,8 +9,10 @@
   }
 
   function testingControllerInstantiation(){
-    var notelistmodel = new NoteListModel()
-    var testController = new Controller(notelistmodel)
+    var notelistmodel2 = new NoteListModel()
+
+    var testController = new Controller(notelistmodel2)
+    console.log(testController.notelistview.noteListy)
 
     testController.htmlConverter()
 

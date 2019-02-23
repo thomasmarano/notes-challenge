@@ -31,8 +31,8 @@
       assert.isTrue(secondNote.id === 3)
       assert.isTrue(thirdNote.id === 4)
     }
-
-    console.log(methodForReturningNotes());
-    console.log(testsInstantiationWorks());
-    console.log(givesEachNoteUniqueId ());
+    //
+    // console.log(methodForReturningNotes());
+    // console.log(testsInstantiationWorks());
+    // console.log(givesEachNoteUniqueId ());
 })(this);

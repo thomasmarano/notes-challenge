@@ -30,9 +30,9 @@
         assert.isTrue(noteViewer.viewHtml() === 'The list of notes is empty!')
       }
 
-      console.log(notesViewInitializesCorrectly())
-      console.log(listToHtmlFor1())
-      console.log(listToHtmlFor0())
+      // console.log(notesViewInitializesCorrectly())
+      // console.log(listToHtmlFor1())
+      // console.log(listToHtmlFor0())
 
 
 })(this);

@@ -22,7 +22,7 @@
 
   }
 
-  console.log(returnsHtmlForNoteModel())
-  console.log(instantiatesSingleNoteView())
+  // console.log(returnsHtmlForNoteModel())
+  // console.log(instantiatesSingleNoteView())
 
 })(this)
