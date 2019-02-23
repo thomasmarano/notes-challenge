@@ -7,8 +7,6 @@
 
 
     Controller.prototype.htmlConverter = function(){
-      // console.log(this.notelistview.viewHtmlNew())
-      // console.log(this.notelistview.noteListy)
       this.inputToPage(this.notelistview.viewHtmlNew())
     };
 

@@ -10,6 +10,7 @@
     NoteListView.prototype.viewHtmlNew = function() {
       if (this.noteListy !== null) {
         var htmlArray = ['<ul>']
+
         console.log('SATURDAY SCARIES')
         console.log(this.noteListy)
         console.log(this.noteListy.lists[0].id)
@@ -18,10 +19,9 @@
           var emptyArray = []
           for (var x = 0; x < 20; x++) {
               emptyArray.push(this.noteListy.lists[i].noteContent.split('')[x])
-
-            }
-        htmlArray.push('<li><div>' + emptyArray.join('') + '</div></li>')
-        } return ((htmlArray.join('') + '</ul>'))
+          }
+        htmlArray.push(('<li><a href="#note' + this.noteListy.lists[i].id + '">' + emptyArray.join('') + '</a></li>'))
+      } return (htmlArray.join(''))
 
 
       } return ('The list of notes is empty!')
